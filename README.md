@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/tbrowder/Timezones-US/actions/workflows/test.yml/badge.svg)](https://github.com/tbrowder/Timezones-US/actions)
+
 NAME
 ====
 
