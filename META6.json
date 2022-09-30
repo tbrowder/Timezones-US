@@ -1,0 +1,26 @@
+{
+  "auth": "zef:tbrowder",
+  "authors": [
+    "Tom Browder"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Provides timezone data for the US for use with modules 'DateTime::US' and 'LocalTime::US'",
+  "license": "Artistic-2.0",
+  "name": "Timezones::US",
+  "perl": "6.d",
+  "provides": {
+    "Timezones::US": "lib/Timezones/US.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "",
+  "tags": [
+    "time timezones US"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}

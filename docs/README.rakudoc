@@ -1,0 +1,29 @@
+=begin pod
+
+=head1 NAME
+
+B<Timezones::US> - Provides timezone data for the US for use with modules 'DateTime::US' and 'LocalTime::US'
+
+=head1 SYNOPSIS
+
+=begin code :lang<raku>
+
+use Timezones::US;
+
+=end code
+
+=head1 DESCRIPTION
+
+B<Timezones::US> exports constant US timezone data to be used by related date and time dynamic modules.
+
+=head1 AUTHOR
+
+Tom Browder <tbrowder@acm.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+© 2022 Tom Browder
+
+This library is free software; you may redistribute it or modify it under the Artistic License 2.0.
+
+=end pod
