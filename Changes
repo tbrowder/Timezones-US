@@ -1,6 +1,11 @@
 Revision history for Timezones-US
 
 {{$NEXT}}
+    - Don't automatically export the constants
+    - Add examples to the README
+    - Add a hash from hour value of UTC offsets to TZ name
+    - Add subroutines remove from module DateTime::US
+    - Add a table of time zone names, symbols, and UTC offsets in hours
 
 0.0.1  2022-09-30T15:30:17-05:00
     - Initial version

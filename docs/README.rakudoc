@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-B<Timezones::US> - Provides timezone data for the US for use with modules 'DateTime::US' and 'LocalTime::US'
+B<Timezones::US> - Provides US time zone data and subroutines for use with modules 'DateTime::US' and 'LocalTime'
 
 =head1 SYNOPSIS
 
@@ -14,7 +14,102 @@ use Timezones::US;
 
 =head1 DESCRIPTION
 
-B<Timezones::US> exports constant US timezone data to be used by related date and time dynamic modules.
+Raku module B<Timezones::US> provides constant US time zone data 
+(currently valid through the year 2030)
+to be used by related date and time dynamic modules.
+
+The following table shows the time zones included:
+
+=begin table :caption<US Time Zones>
+Name            | Symbol | UTC offset 
+                |        | (hrs)
+----------------+--------+-----------------
+Atlantic        | AST    | -4,
+Eastern         | EST    | -5
+Central         | CST    | -6
+Mountain        | MST    | -7
+Pacific         | PST    | -8
+Alaska          | AKST   | -9
+Hawaii-Aleutian | HAST   | -10
+Samoa           | WST    | -11
+Chamorro        | CHST   | +10
+=end table
+
+=head3 Exported constants
+
+The following constants are automatically exported into the using 
+environment:
+
+=begin item 
+C<SEC-PER-HOUR>
+
+Seconds per hour: 3600
+=end item 
+
+=begin item
+C<@tz>
+
+A list of time zones (lower-case symbols)
+=end item 
+
+=begin item
+C<%tzones>     
+
+A hash of all US time zone abbreviations keyed by their symbols (lower-case) with
+values of names and UTC offsets
+=end item 
+
+=begin item
+C<%dst-exceptions>
+
+A hash of US time zone abbreviations keyed by their symbols (lower-case) with
+values of states or regions and details of Daylight Saving exceptions (B<CAUTION>:
+this an incomplete list at the moment)
+=end item 
+
+=begin item
+C<%utc-offsets>
+
+A hash of US time zone abbreviations keyed by their symbols (lower-case) with
+value of their UTC offset in hours
+=end item 
+
+=begin item
+C<%offsets-utc>
+
+A hash of US time zone offsets keyed by their hours 
+with value of their symbols (lower-case) 
+=end item 
+
+
+=head3 Exported subroutines
+
+The following subroutines are automatically exported into the using 
+environment:
+
+=begin item
+B<begin-dst>($year --> DateTime) {...}
+
+Return the time when DST (Daylight Saving Time) begins.
+=end item
+
+=begin item
+B<end-dst>($year --> DateTime) {...}
+
+Return the time when DST ends.
+=end item
+
+=begin item
+B<is-dst>(DateTime :$localtime! --> Bool) {...}
+
+Return True if the local time is DST, otherwise return False.
+=end item
+
+=begin item
+B<show-us-data>(--> Str) {...}
+
+List the time zone and DST data being used.
+=end item
 
 =head1 AUTHOR
 
