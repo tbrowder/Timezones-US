@@ -1,6 +1,8 @@
 Revision history for Timezones-US
 
 {{$NEXT}}
+
+0.0.2  2022-10-02T16:32:16-05:00
     - Don't automatically export the constants
     - Add examples to the README
     - Add a hash from hour value of UTC offsets to TZ name
