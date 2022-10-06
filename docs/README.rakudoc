@@ -106,6 +106,12 @@ Return True if the local time is DST, otherwise return False.
 =end item
 
 =begin item
+B<is-dst>(:$year!, :$month, :$day, :$hour, :$minute, :$second --> Bool) {...}
+
+Return True if the local time is DST, otherwise return False.
+=end item
+
+=begin item
 B<show-us-data>(--> Str) {...}
 
 List the time zone and DST data being used.

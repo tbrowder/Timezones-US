@@ -73,6 +73,10 @@ The following subroutines are automatically exported into the using environment:
 
     Return True if the local time is DST, otherwise return False.
 
+  * **is-dst**(:$year!, :$month, :$day, :$hour, :$minute, :$second --> Bool) {...}
+
+    Return True if the local time is DST, otherwise return False.
+
   * **show-us-data**(--> Str) {...}
 
     List the time zone and DST data being used.

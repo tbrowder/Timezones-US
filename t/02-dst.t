@@ -18,7 +18,7 @@ Update the DST (daylight savings time) module with the desired year
 
 =end comment
 
-my $ntests = %dst.elems * 4;
+my $ntests = %dst.elems * 8;
 plan $ntests;
 
 for %dst.keys -> $year {
@@ -36,6 +36,16 @@ for %dst.keys -> $year {
     is $dtb.day,   $begin-day;
     is $dte.month, $end-month;
     is $dte.day,   $end-day;
+
+    my $not-dst = DateTime.new: :$year, :month(1);
+    my $is-dst  = DateTime.new: :$year, :month(6);
+
+    # 4 tests
+    is is-dst(:localtime($is-dst)), True;
+    is is-dst(:localtime($not-dst)), False;
+    is is-dst(:year($is-dst.year), :month($is-dst.month)), True;
+    is is-dst(:year($not-dst.year), :month($not-dst.month)), False;
+
 }
 
 =begin comment

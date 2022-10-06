@@ -75,7 +75,19 @@ constant %utc-offsets is export = [
 constant %offsets-utc is export = %utc-offsets.invert;
 
 # subroutines
-sub is-dst(DateTime :$localtime --> Bool) is export {
+multi sub is-dst(
+    :$year!, 
+    :$month  = 1, 
+    :$day    = 1, 
+    :$hour   = 0, 
+    :$minute = 0, 
+    :$second = 0
+    --> Bool) is export {
+    my $localtime = DateTime.new(:$year, :$month, :$day, :$hour, :$second);
+    is-dst :$localtime;
+}
+
+multi sub is-dst(DateTime :$localtime --> Bool) is export {
     my $t = $localtime;
     my $year = $t.year;
 
