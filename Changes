@@ -2,6 +2,7 @@ Revision history for Timezones-US
 
 {{$NEXT}}
     - Add a new multi sub for is-dst
+    - Add missing test dependency to META6.json
 
 0.0.2  2022-10-02T16:32:16-05:00
     - Don't automatically export the constants
