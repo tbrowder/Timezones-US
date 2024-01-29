@@ -1,6 +1,8 @@
 Revision history for Timezones-US
 
 {{$NEXT}}
+
+0.0.6  2024-01-28T20:34:59-06:00
     - Remove bin/ahow-info
     - Remove test t/2*t which was useless and causing problems oh Windows
 
