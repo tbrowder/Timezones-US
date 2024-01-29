@@ -2,7 +2,7 @@ Revision history for Timezones-US
 
 {{$NEXT}}
     - Remove bin/ahow-info
-    - Renove test t/2*t
+    - Remove test t/2*t which was useless and causing problems oh Windows
 
 0.0.5  2024-01-28T18:51:38-06:00
     - Release on master branch
