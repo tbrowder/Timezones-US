@@ -21,7 +21,6 @@
     "time timezones US"
   ],
   "test-depends": [
-    "IO::Capture::Simple"
   ],
   "version": "0.0.3"
 }
