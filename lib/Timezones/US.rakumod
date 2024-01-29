@@ -115,7 +115,9 @@ sub begin-dst($year! --> DateTime) is export {
 
    my $sunday = $day1 + $day-skip;
    my $wdom = $sunday.weekday-of-month; # 1..5
-   die "FATAL: day $sunday is not the first, it's Sunday {$wdom} of March" if $wdom != 1;
+   die "FATAL: day $sunday is not the first, it's Sunday {$wdom} of March" 
+       if $wdom != 1;
+
    my $dst = $sunday + 7;
    my $dst-begin = DateTime.new: :date($dst), :2hour, :0minute, :0second;
 }
@@ -129,7 +131,9 @@ sub end-dst($year --> DateTime) is export {
 
    my $sunday = $day1 + $day-skip;
    my $wdom = $sunday.weekday-of-month; # 1..5
-   die "FATAL: day $sunday is not the first, it's Sunday {$wdom} of November" if $wdom != 1;
+   die "FATAL: day $sunday is not the first, it's Sunday {$wdom} of November" 
+       if $wdom != 1;
+
    my $dst = $sunday;
    my $dst-end = DateTime.new: :date($dst), :2hour, :0minute, :0second;
 }

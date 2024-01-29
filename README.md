@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/tbrowder/Timezones-US/actions/workflows/test.yml/badge.svg)](https://github.com/tbrowder/Timezones-US/actions)
+[![Actions Status](https://github.com/tbrowder/Timezones-US/actions/workflows/linux.yml/badge.svg)](https://github.com/tbrowder/Timezones-US/actions) [![Actions Status](https://github.com/tbrowder/Timezones-US/actions/workflows/macos.yml/badge.svg)](https://github.com/tbrowder/Timezones-US/actions) [![Actions Status](https://github.com/tbrowder/Timezones-US/actions/workflows/windows.yml/badge.svg)](https://github.com/tbrowder/Timezones-US/actions)
 
 NAME
 ====
