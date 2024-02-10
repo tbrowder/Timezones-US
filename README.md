@@ -81,6 +81,10 @@ The following subroutines are automatically exported into the using environment:
 
     List the time zone and DST data being used.
 
+Note some of these routines are now duplicated in module `DateTime::US` but they are now (1) perpetual and (2) return c<Date> objects instead of `DateTime` objects which are preferred for use by module `Calendar`. As well, this module was designed to be completely standalone.
+
+If the user requires "perpetual" DST dates for all all years affected under current US ferederal law, please use the routines in `DateTime::US`.
+
 AUTHOR
 ======
 

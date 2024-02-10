@@ -1,10 +1,14 @@
 Revision history for Timezones-US
 
 {{$NEXT}}
+    - Fix typos
+    - Explain reason for and use of duplicate subs between 
+      this module and module DateTime::US
 
 0.0.6  2024-01-28T20:34:59-06:00
-    - Remove bin/ahow-info
-    - Remove test t/2*t which was useless and causing problems oh Windows
+    - Remove bin/show-info
+    - Remove test t/2*t which was useless and causing problems on i
+      Windows
 
 0.0.5  2024-01-28T18:51:38-06:00
     - Release on master branch
