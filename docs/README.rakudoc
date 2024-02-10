@@ -118,9 +118,10 @@ List the time zone and DST data being used.
 =end item
 
 Note some of these routines are now duplicated in module C<DateTime::US>,
-but they are now (1) perpetual and (2) return C<Date> objects instead
-of C<DateTime> objects which are preferred for use by module C<Calendar>.
-As well, this module was designed to be completely standalone.
+but those are (1) perpetual and (2) return C<Date> objects instead
+of C<DateTime> objects which are preferred for use by the author's 
+module C<Calendar>.  As well, this module was designed to be completely 
+standalone.
 
 If the user requires "perpetual" DST dates for all all years affected
 under current US federal law, please use the routines in C<DateTime::US>.
