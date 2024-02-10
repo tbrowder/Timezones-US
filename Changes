@@ -7,7 +7,7 @@ Revision history for Timezones-US
 
 0.0.6  2024-01-28T20:34:59-06:00
     - Remove bin/show-info
-    - Remove test t/2*t which was useless and causing problems on i
+    - Remove test t/2*t which was useless and causing problems on
       Windows
 
 0.0.5  2024-01-28T18:51:38-06:00
